@@ -1,6 +1,5 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-
     color: #C0C87F;
 }
 
@@ -39,6 +38,8 @@ header {
     justify-content: center;
     flex-direction: column;
     background-color: #DC4051;
+    border-right: 2px solid rgb(0, 0, 0);
+    border-left: 2px solid rgb(0, 0, 0);
 }
 
 #duck {
@@ -77,6 +78,8 @@ header {
     flex-direction: column;
     text-align: center;
     background-color: #E05C2D;
+    border-right: 2px solid rgb(0, 0, 0);
+    border-left: 2px solid rgb(0, 0, 0);
 }
 
 .grid-container {
@@ -115,6 +118,12 @@ form {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.form-items {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
 }
 
 button {
