@@ -1,14 +1,17 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     color: #C0C87F;
+    padding: 0;
+    margin: 0;
 }
 
 nav {
     border: 2px solid rgb(0, 0, 0);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #E05C2D;
-  
+    padding: 1em;
+    text-decoration: none;
 }
 
 .nav-left {
@@ -24,12 +27,27 @@ nav {
 
 ul {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     background-color: #E05C2D;
+    text-decoration: none;
 }
 
 li {
     background-color: #E05C2D;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    color: aqua;
+}
+
+li a:active {
+    color: black;
 }
 
 header {
@@ -40,6 +58,7 @@ header {
     background-color: #DC4051;
     border-right: 2px solid rgb(0, 0, 0);
     border-left: 2px solid rgb(0, 0, 0);
+    padding: 3em;
 }
 
 #duck {
@@ -47,6 +66,7 @@ header {
     background-color: white;
     justify-content: center;
     border: 2px solid rgb(0, 0, 0);
+    text-shadow: #FC0 1px 0 10px;
 }
 
 .duck-item {
@@ -74,6 +94,7 @@ header {
 }
 
 #emergency {
+    padding: 2em;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -89,8 +110,6 @@ header {
     width: 40%;
     margin: 0 auto;
     padding-bottom: 20px;
-
-
 }
 
 .grid-item {
@@ -101,7 +120,18 @@ header {
     width: 150px;
     background-color: blueviolet;
     color: white;
+    filter: blur(2px);
+}
 
+.grid-container a{
+    text-decoration: none;
+}
+
+.grid-item:hover {
+    color: #FC0;
+    filter: none;
+    transition-property: all;
+    transition-delay: 0.2s;
 }
 
 footer {
@@ -129,3 +159,7 @@ form {
 button {
     background-color: #E05C2D;
 }
+
+select:focus {
+    background-color: ivory;
+  }
